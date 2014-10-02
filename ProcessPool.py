@@ -118,20 +118,3 @@ class ProcessPool(object):
 		self.pid = pid
 		process = psutil.Process(pid)
 		process.status()
-
-	#def start(self, process_list, size):
-	#	global list
-	#	global queue
-	#	self.process_list = process_list
-	#	self.size = size
-	#	i = 0
-	#	while i < size:
-	#		process = multiprocessing.Process(target = process_list[i][0], args = process_list[i][1])
-	#		process.start()
-	#		self.listing(process)
-	#		print "%s has started" % process
-	#		i  = i + 1
-	#	while i < len(process_list):
-	#		queue.put(multiprocessing.Process(target = process_list[i][0], args = process_list[i][1]))
-	#		i = i + 1
-	#	print self.dequeue_list(list)
